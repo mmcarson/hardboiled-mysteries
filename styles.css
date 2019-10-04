@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Special+Elite&display=swap');
+.face {
+    max-width: 5em;
+    float: left;
+    padding-right: 1em;
+    /* position: relative;
+    top: 0%; */
+}
+
+h1,
+h2 {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+}
+
+h3,
+h4,
+h5,
+h6,
+b,
+i,
+nav {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: rgb(19, 31, 31);
+    color: whitesmoke;
+    margin: 0em;
+    padding: 2em;
+}
+
+body {
+    margin: 0em;
+    background-color: rgb(23, 22, 20);
+    color: wheat;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 0em;
+}
+
+dl.with-pictures * {
+    margin-bottom: 1em;
+    margin-left: 0em;
+    display: block;
+}
+
+h2 {
+    color: darkgoldenrod;
+    clear: both;
+}
+
+dt,
+h3 {
+    color: darkkhaki;
+}
+
+h4 {
+    color: olivedrab;
+}
+
+nav ul {
+    background-color: rgb(43, 40, 62);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    flex-grow: 1;
+    list-style-type: none;
+    margin: 0px;
+    /* width: 100%; */
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: .5em;
+    margin: .5em;
+    display: inline-block;
+    color: antiquewhite;
+    background-color: rgb(58, 45, 70);
+    width: calc(100% - 1.5em);
+    text-align: center;
+}
+
+nav ul li a.last {
+    width: calc(100% - 2em);
+}
+
+section {
+    background-color: rgb(24, 27, 33);
+    padding: 1em;
+    margin: 1em;
+}
