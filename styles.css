@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Special+Elite&display=swap');
+@import url('burger-styles.css');
 .face {
     max-width: 5em;
     float: left;
@@ -66,15 +67,31 @@ h4 {
 
 nav {
     position: sticky;
+    background-color: rgb(43, 40, 62);
     top: 0%;
 }
 
 nav ul {
-    background-color: rgb(43, 40, 62);
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: row;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.flex-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+figcaption {
+    padding-top: 1em;
+}
+
+img {
+    max-width: 100%;
 }
 
 nav ul li {
@@ -94,10 +111,6 @@ nav ul li a {
     background-color: rgb(58, 45, 70);
     width: calc(100% - 1.5em);
     text-align: center;
-}
-
-nav ul li:last-child a {
-    width: calc(100% - 2em);
 }
 
 section {
@@ -120,7 +133,37 @@ nav a:focus {
     background-color: rgb(105, 87, 141);
 }
 
-article {
+article,
+figure {
     background-color: rgba(245, 245, 220, 0.05);
     padding: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (min-width: 601px) {
+    #main-nav {
+        height: auto !important;
+    }
+    .hamburger {
+        display: none;
+    }
+    nav ul li:last-child a {
+        width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 600px) {
+    #main-nav {
+        flex-direction: column;
+        height: 0px;
+        transition: height .5s;
+    }
+    #main-nav>* {
+        width: 100%;
+        margin: 0%;
+    }
+    #main-nav:nth-child(2) * {
+        margin-top: 0px;
+    }
 }
