@@ -24,7 +24,7 @@ nav {
 
 header {
     background-color: rgb(19, 31, 31);
-    color: whitesmoke;
+    color: antiquewhite;
     margin: 0em;
     padding: 2em;
 }
@@ -55,13 +55,18 @@ h2 {
     clear: both;
 }
 
-dt,
+b,
 h3 {
     color: darkkhaki;
 }
 
 h4 {
     color: olivedrab;
+}
+
+nav {
+    position: sticky;
+    top: 0%;
 }
 
 nav ul {
@@ -91,7 +96,7 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li a.last {
+nav ul li:last-child a {
     width: calc(100% - 2em);
 }
 
@@ -99,4 +104,18 @@ section {
     background-color: rgb(24, 27, 33);
     padding: 1em;
     margin: 1em;
+    clear: both;
+}
+
+dd {
+    overflow: hidden;
+}
+
+section:target {
+    padding-top: 3em;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgb(105, 87, 141);
 }
