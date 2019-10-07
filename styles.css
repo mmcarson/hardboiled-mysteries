@@ -119,3 +119,8 @@ nav a:hover,
 nav a:focus {
     background-color: rgb(105, 87, 141);
 }
+
+article {
+    background-color: rgba(245, 245, 220, 0.05);
+    padding: 1em;
+}
