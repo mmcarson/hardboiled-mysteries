@@ -141,7 +141,7 @@ figure {
     margin-inline-end: 0px;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 601px) and (max-resolution: 399dpi) {
     #main-nav {
         height: auto !important;
     }
@@ -153,7 +153,8 @@ figure {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px),
+(min-resolution: 400dpi) {
     #main-nav {
         flex-direction: column;
         height: 0px;
@@ -165,5 +166,8 @@ figure {
     }
     #main-nav:nth-child(2) * {
         margin-top: 0px;
+    }
+    .hamburger {
+        display: block;
     }
 }
