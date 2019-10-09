@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+
+  hardboiled-apache:
+    image: httpd
+    ports: 
+      - "8083:80"
+    volumes:
+      - ".:/usr/local/apache2/htdocs/"
