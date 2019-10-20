@@ -25,6 +25,9 @@ nav {
 
 header {
     background-color: rgb(19, 31, 31);
+    /* background-image: url(images/Facebook-banner.jpg);
+    background-size: 100vw;
+    height: 15vw; */
     color: antiquewhite;
     margin: 0em;
     padding: 2em;
@@ -102,7 +105,7 @@ nav ul li {
     display: inline-block;
 }
 
-nav ul li a {
+#main-nav li a {
     text-decoration: none;
     padding: .5em;
     margin: .5em;
@@ -128,8 +131,8 @@ section:target {
     padding-top: 3em;
 }
 
-nav a:hover,
-nav a:focus {
+#main-nav a:hover,
+#main-nav a:focus {
     background-color: rgb(105, 87, 141);
 }
 
@@ -141,7 +144,21 @@ figure {
     margin-inline-end: 0px;
 }
 
-@media (min-width: 601px) and (max-resolution: 399dpi) {
+a:link {
+    color: lightskyblue;
+}
+
+a:visited {
+    color: rgb(208, 177, 235);
+}
+
+a:hover,
+a:focus {
+    color: yellow;
+}
+
+@media (min-width: 51em) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 51em) and (-webkit-min-device-pixel-ratio: 1) {
     #main-nav {
         height: auto !important;
     }
@@ -153,8 +170,10 @@ figure {
     }
 }
 
-@media (max-width: 600px),
-(min-resolution: 400dpi) {
+@media (max-width: 50em),
+(-webkit-min-device-pixel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 4),
+(-webkit-min-device-pixel-ratio: 5) {
     #main-nav {
         flex-direction: column;
         height: 0px;
@@ -170,4 +189,7 @@ figure {
     .hamburger {
         display: block;
     }
+    /* .flex-row {
+        grid-template-columns: 1fr;
+    } */
 }
