@@ -4,9 +4,13 @@ services:
   hardboiled-apache:
     image: httpd
     ports: 
-      - "8083:80"
+      - "80:80"
+      - "443:443"
     expose:
-      - "8083"
+      - "443"
+      - "80"
     volumes:
       - ".:/usr/local/apache2/htdocs/"
+      - "./certs/:/usr/local/apache2/conf/"
+      - "./logs/:/usr/local/apache2/logs/"
       

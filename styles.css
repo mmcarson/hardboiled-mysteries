@@ -8,6 +8,10 @@
     top: 0%; */
 }
 
+:root {
+    --height-factor: 1.3;
+}
+
 h1,
 h2 {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
@@ -24,13 +28,18 @@ nav {
 }
 
 header {
-    background-color: rgb(19, 31, 31);
-    /* background-image: url(images/Facebook-banner.jpg);
-    background-size: 100vw;
-    height: 15vw; */
-    color: antiquewhite;
+    /* background-color: rgb(25, 112, 112); */
+    background-color: #060301;
+    background-image: url(images/Facebook-banner-cropped.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-y: -4vw; */
+    /* height: 20vw; */
+    /* color: antiquewhite; */
+    color: rgb(244, 232, 102);
     margin: 0em;
     padding: 2em;
+    /* position: absolute; */
 }
 
 body {
@@ -127,10 +136,6 @@ dd {
     overflow: hidden;
 }
 
-section:target {
-    padding-top: 3em;
-}
-
 #main-nav a:hover,
 #main-nav a:focus {
     background-color: rgb(105, 87, 141);
@@ -173,6 +178,9 @@ a:focus {
     nav ul li:last-child a {
         width: calc(100% - 2em);
     }
+    section:target {
+        padding-top: 3em;
+    }
 }
 
 @media (max-width: 50em),
@@ -203,5 +211,8 @@ a:focus {
     .burger,
     #main-nav a {
         font-size: 2em;
+    }
+     :root {
+        --height-factor: 3;
     }
 }
