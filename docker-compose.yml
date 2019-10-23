@@ -1,16 +1,28 @@
 version: "3.7"
 services:
 
-  hardboiled-apache:
-    image: httpd
-    ports: 
+  # hardboiled-apache:
+  #   image: "httpd"
+  #   ports: 
+  #     - "80:80"
+  #     # - "443:443"
+  #   expose:
+  #     # - "443"
+  #     - "80"
+  #   volumes:
+  #     - "./public/:/usr/local/apache2/htdocs/"
+  #     - "./certs/:/usr/local/apache2/conf/"
+  #     - "./logs/:/usr/local/apache2/logs/"
+
+  hardboiled-nginx:
+    image: "nginx"
+    ports:
       - "80:80"
       - "443:443"
     expose:
       - "443"
       - "80"
     volumes:
-      - ".:/usr/local/apache2/htdocs/"
-      - "./certs/:/usr/local/apache2/conf/"
-      - "./logs/:/usr/local/apache2/logs/"
-      
+      - "./public:/usr/share/nginx/html"
+      - "./nginx:/etc/nginx"
+      - "./logs/nginx:/var/log/nginx"
