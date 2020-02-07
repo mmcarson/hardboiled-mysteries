@@ -69,6 +69,14 @@ main {
     padding: 0em;
 }
 
+dl.with-pictures {
+    /* display: grid; */
+    /* grid-auto-flow: column dense; */
+    /* grid-template-rows: repeat(); */
+    /* grid-template-columns: 1fr auto; */
+    gap: 1em;
+}
+
 dl.with-pictures * {
     margin-bottom: 1em;
     margin-left: 0em;
@@ -153,10 +161,6 @@ ol li {
     /* color: darkslateblue; */
 }
 
-.collapse-plus {
-    padding: 1em;
-}
-
 .featured {
     background-color: darkgoldenrod !important;
 }
@@ -164,11 +168,6 @@ ol li {
 .featured:hover,
 .featured:focus {
     background-color: sienna !important;
-}
-
-.collapse-head {
-    /* display: inline; */
-    background-color: rgb(61, 78, 27);
 }
 
 img {

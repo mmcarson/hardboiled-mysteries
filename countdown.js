@@ -6,11 +6,8 @@ if (Date.now() <= eventDate) {
     countdown = document.getElementById("countdown")
     countdown.parentNode.removeChild(countdown)
     document.querySelectorAll(".ticket-button").forEach(button => {
-        console.log({ button })
-        console.log(button.parentNode)
         parent = button.parentNode
         parent.removeChild(button)
-            // console.log(parent.innerText).replace(" ", "8")
         if (parent.innerText === "") {
             parent.parentNode.removeChild(parent)
         }
