@@ -1,0 +1,120 @@
+@import url('https://themes.googleusercontent.com/fonts/css?kit=9-wW4zu3WNoD5Fjka35Jm1aRxA9DYWeum4EZZlWLIpEaFXrN8pcgcXxKROrvMNtB');
+
+/* .newsletter {
+    background-color: rgb(46, 25, 65);
+    color: whitesmoke;
+} */
+
+.newsletter p {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+}
+
+ol {
+    margin: 0;
+    padding: 0
+}
+
+table td,
+table th {
+    padding: 0
+}
+
+.c11 {
+    padding-top: 0pt;
+    padding-bottom: 3pt;
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c0 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    height: 11pt
+}
+
+.c3 {
+    /* color: #000000; */
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 18pt;
+    font-family: "Special Elite";
+    font-style: normal
+}
+
+.c8 {
+    /* color: #000000; */
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 30pt;
+    font-family: "Special Elite";
+    font-style: normal
+}
+
+.c4 {
+    /* color: #000000; */
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-family: "Special Elite";
+    font-style: normal
+}
+
+.c1 {
+    /* color: #000000; */
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Special Elite";
+    font-style: normal
+}
+
+.c2 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c10 {
+    /* color: #000000; */
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 18pt;
+    font-style: normal
+}
+
+.c9 {
+    /* color: #000000; */
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-style: italic
+}
+
+.c7 {
+    /* background-color: #ffffff; */
+    max-width: 607.5pt;
+    /* padding: 72pt 85.5pt 72pt 99pt */
+}
+
+.c5 {
+    font-weight: 400;
+    font-family: "Special Elite"
+}
+
+.c6 {
+    vertical-align: super
+}

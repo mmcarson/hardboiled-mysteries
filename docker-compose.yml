@@ -19,9 +19,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    expose:
-      - "443"
-      - "80"
     volumes:
       - "./public:/usr/share/nginx/html"
       - "./nginx:/etc/nginx"
