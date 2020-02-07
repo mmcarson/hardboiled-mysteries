@@ -157,6 +157,15 @@ ol li {
     padding: 1em;
 }
 
+.featured {
+    background-color: darkgoldenrod !important;
+}
+
+.featured:hover,
+.featured:focus {
+    background-color: sienna !important;
+}
+
 .collapse-head {
     /* display: inline; */
     background-color: rgb(61, 78, 27);
